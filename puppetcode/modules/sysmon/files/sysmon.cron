@@ -1,0 +1,15 @@
+# This file is managed via Puppet. Any manual changes to this file would not survive the next puppet 
+# run and would be overwritten by the puppet version.
+# Please contact DevOps team if you wish to make changes in this file.
+#
+# Don't clog the mail system every five-minutes.
+MAILTO=""
+
+# Run sysmon script every minute
+*/5 * * * * root /usr/local/sbin/sysmon
+
+# Delete files older than 30 days
+0 0 * * * root (/usr/bin/find /var/log/sysmon/ -type d -mtime +30 -exec rm -fr '{}' ';')
+
+# Zip files older than yesterday
+0 0 * * * root (/usr/bin/find /var/log/sysmon/ -type f -mtime +1 -name '*.txt' -exec ionice -c 3 bzip2 '{}' ';')

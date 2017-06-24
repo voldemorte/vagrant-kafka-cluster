@@ -1,0 +1,222 @@
+---
+accounts:
+  jfortier:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Justin Fortier'
+  pravinr:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Pravin Rajput'
+  nikhil.c:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Nikhil Chaudhari'
+  ajha:
+    gid: 'devops'
+    ensure: absent
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Ashutosh Jha'
+  ashutosh:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Ashutosh Jha'
+  vijay:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Vijay Kumbhar'
+  rdavis:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Rich Davis'
+  deploy:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+  clightfoot:
+    gid: 'devops'
+    ensure: absent
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Craig Lightfoot'
+  craig:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Craig Lightfoot'
+  rajesh:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Rajesh Mande'
+  nileshm:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Nilesh'
+  bhuvan:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'Bhuvan Khanna'
+  dmarshall:
+    gid: 'devops'
+    ensure: present
+    managehome: true
+    shell: '/bin/bash'
+    comment: 'David Marshall'
+
+ssh_pub_keys:
+  Administrator@AdminX64-046:
+    ensure: present
+    user: 'rdavis'
+    type: 'ssh-dss'
+    key: 'AAAAB3NzaC1kc3MAAACBALAcMbqjYESJ9uFQ0uuPgdMm7r80+8tz/kW9S4wB6YB2fKRelqvEX8ym6RsbSVPQylrvlDsraYsMEStbBJKBQgu4JrhMHYWBFoNz5jA3KWeRcxogR6D8lU9SfUys0/9yvLiKhvqvfWEL2Um6pjtUesoZwahHfZa2znmxNqXRqcGpAAAAFQDlMXPI//hIvOPNqeEI9Mr3X2giaQAAAIEAkjAwEa7BgCcoQ54/aMsjt8g0uHfZaXvMO5jzdNWyt2cYPP3MsP4KDHr9XMaVLQQefpLTeQ1h4AFDtFdCqgkM3Tcoj4F2ExGCVZiPghm9pAqKI73U4xKzSXPgHOmYQL5F9KcYKfqF2o16y51nNNvRH9bsrd46TBzFNrGAHJIM8JgAAACAdsVIc+azJqgbxuN2uoGE4sI6XZNpV3lbkQQ2RJThNOiHr3Qauh3CoO9MBCkvJovOkGq7JTAn3RKExY5KLTJsXEBMN0nPjJUIddoF+0aSZWIIowppacXGpyyfbmCgAC+iWOht3fz447i/dA28iDn6EWorA9slmDdZV0ZrHbAgRCE='
+  richarddavis@richard-daviss-macbook-pro.local:
+    ensure: present
+    user: 'rdavis'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAABIwAAAQEA9ohOJD2lz8KKQ0eUeLDZWF8QIyxFeaWtgFwuDDXCfDEvoUzkGG5BZGeM23uteZUXQ/Rnfy4BK4iWtx41eF/seOqytAHB5eyf10LgtUrdiC7wREW+nkgDZbjcO0Iw+9j9qFIehwxJ8OsBI7IIcRmX14bLcgqy//EITCssAA9i6KfnCEsNsAiRru/q/A/Kt9LQsJOO77rOaeitPdyyefHnRexeD10gox9qnuidcZr9pkNKZkKC4ygELocJEKdfVg62lXZ6Rf/A7hLviYWSxim5gCk9dMV9eVEWEz1H8h30O9qjFdhnuSFerje67pkPtilJlFU0oEgoBUQsOeDY4EmEKQ=='
+  nikhil.c@nikhil-E431:
+    ensure: present
+    user: 'nikhil.c'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDLpY/88IXjKJeDPiRwTx+IuPBg97VS5eAFiwIHBOaCuZJULYofUnRbkuFiRRdPkS6tKaJxTNi0HHkogJFDQJFn2S0E3GOxOyJHzpYyC06jkuveZYq1MoGd0vLNTYM5hOK2ecR5BpouIV07KYc9WuTgy14Vc0jyrXnm+TGkxdd7QsY+ROT25Ni728h+EmkESdN957VK0ek+wcSmXb11eaFYZ5OOCXr0CfKutg3Zk8zJc9veQ6rSJWMRBxRCV4aRinN1aq2RWxY1kUjKMJmUhHGW8qcOT3kKCyRBM5efZtT3Dj4+zKZUJ004HBVX6qZd+N02CgziLGaw170uzEHB0i2t'
+  craig.lightfoot@weboniselab.com:
+    ensure: present
+    user: 'craig'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCy8tBjhCzOxczhYn23V54zp7anh7SQGGyLGZPjTWfz5DUFjNZu44h5TSKx1nmHOht/LdNyRCtIj33EO7hhWlA6968s9r+Gb3jTQW32opys93eUId3D38Yn62eeiitNqvk+Bfgi3Ccr6pNM4Sh8IQgGHg+g27llhQTxr1osE5uul6bE/F8BZAXgZ7nrhiU/OqHbCwOWbzE1pkVBzRlvxi8r8/B4MdBQ84xB0I0NskM1dNOjICikbWuVc4R5mrLw5uUInDrYvjQY9/6Hfx5DNtz+mTFj19XxRQ5+GI3ZZ63AsQPiEGOK6cpRrMiROsWsfB/+IxloEy4i2wLS0WT83Gol'
+  bhuvan@weboniselab.com:
+    ensure: present
+    user: 'bhuvan'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDeKLKLWA86Q06OCUrXm/xUdIegBlv+8K+a4GaT9RgQPEjiXQCNiYbZkRrzCQx0xk3otxv8XcKU6M2QNExhO9XJ9xM3uip0qJ80CqVP+CV+cyKVQaIqsn+c0fdl5NUMiyGtEj5VQ7idSgeAWSepTyKhFlJueRrZOAQZxTHUqgWq9bAgUKqJCxG3qdJYxiQ121Ni4ASHBgkM4Cju3bKYLBipth1D0kjeddhmc9EEUqiVlp+K+G1R/tfVE+dyIduu4js6nUvoyjfLbpZFhvJktQYkOHtYPCHF/n5+nzyBCNTXnvJj/fiZqBo6vzXwz7IufZubDf87sFQqJozeXP47qGxfzWZu/VwDSWGGdSst9GNgtWjCI0NU9rBhlQU8Po6QPHYsQH8ZEeZV8ty+swVHA7Nl1QhZFCmbq3Tve2egifA8PB0OkEvfD06CpjU/+MZ1YRTyMXjfQ12sl7/jxN9EKk+VxCCEfCiETZCj7AEhNZ8bgMIvkQZBssVTT0FxJtXGUavK16ZaWnMucOsnw43+HJwxEvdjT9FRAX/OX/1chI6cS8SlO7n27P0As4P3jfWTUflkQqy0unTZaVdt6pi0IknvXb/QBxPM0ye3Ecaeu+zCAemnS2vz09XtLqNVZlrBePGUhCv9Ox0Xuy1DafhPDNKRqtkw35mCcy1D+J0qq5hP5Q=='
+  ubuntu@capsize:
+    ensure: present
+    user: 'deploy'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCpxl4slSOqJO0CmTa88UlouOahUcRU0xaTX4/y/mRdA5dp9hW8msShXYujl/cPYkHsb7sgGC9Gl3Pxbd6oYZ3xjs/hw55jGS1WNQwI2LUay48KctQEkxOQojbroZvyyjfFDujeDztrQJ//pE8WrtuNF1yjYAKa5Gde8mRCpW/hi9fd5mysBDS/tN4mmPUcj2iOfYc1AlCVefufmbdBLyhgl9RAqNc9bAEX6jx3YeAESIqW4GTtSEw5QGshm+To9ThlybmHw471dIjheqeFGx/Z3eh6G5HOSNFLnNsT4Slz4q/wZVPKVytkYTcxZet5V1vwWdRMhWE7Oy7iyBYWN93j'
+  dmarshall:
+    ensure: present
+    user: 'dmarshall'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC6M36I4wPEsQY9Gp6yQxScSqJo0tYSebe9xcMSSnuNrCq1/rN1KlUJELq5wtRD2dL6LwQMuAn4MVVIP4Io3FzdI5G8IQNso+NGHbgyaR4Zk2muT2JVZuqOpCFbgbvs5LocvYjZTZ4xeoTEyxzSzK/RxE9WX9015gmhGSQjnU1rWrPzAQn/8UsYqOfz9Wl9Kch0HJrS9H9pwxfDUzPH91EUmKf9saCwhjMrBvL+s631JlUxq62co4yQK6Ogv74FUC3ZZsT/I1EZTqL0u4BL4grMe7YQyKo5S2Z2WrbydQRsg9dcdGdlp4VDggbus9Asjvvs4sA8zr/mB0U0F7R9rpGV'
+  justin.fortier@weboniselab.com:
+    ensure: present
+    user: 'jfortier'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQD7BfWUChnT/ruGuacWJ9L2HP5WKAnHkNPGK4T8CQyPUuG00I2kM/eAHTgojRWccxulmgeyK8Wab0gT+qS/ND2hFQMVEvkXy1H6R4jmqmorUz4lHAngnPect47Ncq40n/mx9YXMwk4HKmZPdT5yAJcuc69su6YroLkF50lM//tBVAoc4O+OTYoB9DyyxreUKWsSu/jDNCpSBhdpoJ8yPHbncsd31+BiZcZBivtbnB+KRPWvGw7z0j96Avpd7SeLKAw4qjNGsqCPbfpAdNw7/05IUYVf29yLmrwkwLVV1Q51mAnbcS5uAdtcpmqpv2f0uDLkQIED1Rtq99vaE8ba30UoMvVuZwso8KZJTrsO0ssuiVQi+Vr/U0pOtA0hZBtn8jWhaj/E90y+UKlSqvzU0HrLRqucSJZlR13v9aa+qQ2IwEkIZO8l9nYCUGmWAY35KwsvAHNqMY+iC610eukjDt46cPvDC09Jc/ckNmzetSTXD783Wv6Mj6vb2OIk9ySHidm3u+OiX/pYxUkMseaNhWsbnA+StWcbT+XCwHmXz5vCX3jjKD+lAoErjt+lZd15T8u9StgT/S4kz0hMDAzhkA3OR3Ki7WvqgQ/Bqc1r+JN7h9R52Fsw561B5T+9oYI/oPaCW/G+azjjEb6PmqT8g0jNzdVs9wunYtpsNVNhWeDHYQ=='
+  nileshm:
+    ensure: present
+    user: 'nileshm'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDJZOe9yXLNOlTN54soCv9/ud3BDSiywxkuX6UctvKfcfdPV01OXrNFxejNk/n25d+Th0aKuhoCp/Q4s09q2ezayy0mIadeN/wDzONm2LaMZvPZmvtwjfUEyxwf+tPZyoFJqmRTfsakGwPlLU/LTOtMBsdckTwC95zjrhX5uK8BifarGOc3HyJJ8QYZ5Hg3e7XuQc9o8TLZlP7wdDIchi1uiwJ7Lw/WBQPRQ1x8hE6ta0hxzkOyM/E8Ii+YhG5oTFZ4ELirDU2nv+dXQv9NpvWaIQmz3AbJTvmmC/e0QLM0plQrGJxuIN/4/JErWEYyh+quRgEy3pNGN3vPD6hrFGIZ'
+  pravin.rajput@weboniselab.com:
+    ensure: present
+    user: 'pravinr'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDXOIlBEdMyaFTlB9kCiuz3n315ZuFz6J8Z+OPKiIL2O5NOUIzeqZ6UqL4M6eaR70rwo0y8HiTzkCjLH90rRfbiOZyuTkIQzSMzWyxdy2tE3vSP2xJkfwoBvyN/KbI+l20UDiBkF6JtWJ+3c4vtJLOCZzzCotfSS1dztpzpBm896iUr3Gn6fVo0aTz6wZybaWwvoC8n0l8AlN/Mp5aeagWITOyEP04NiypeeJ2V5lxjmB3Qv31ly2OSmp2jNuryRS4RfTGkE8AJq6ILPxmqkA75ehvx6fxtvUXtzuy0WAE2J6YMKWpz/+w+62MP4x62rH0gCyd9qbv2b0y65CW6ZoM5tDVnF4+uAG4q4l/zhhBNb+zsJKmqBbAg2oNTuCq8yK5cHWDVB6AZ06WfsxN1Sr4lhUnTkA5Xq9aTlloqybxWnes9vS1UiUZaCoMRl1otN+v5h+ACtrc1XJn9TjK6DHzfj/ADLlijfacUM+ybKPgQ/0gE04z4mAMDL9WRpmXWBtJ5WLtduxsVy2cNhv9vNBbBONi38Yx9Wi6j3VcS4IxLNm5y6AJ3ivQNA7SsSA4j7LxABUcsRZ8BT6bJlkzeGiAJFNBrwlKqNz546Um2h6TzKqNMFNr/NaXB+DUQmMf4P3obpguAXQMnbUlXTp9k3zsz6nHDCWC684twyQ3qbEqD2w=='
+  rajesh.mande@weboniselab.com:
+    ensure: present
+    user: 'rajesh'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDC2c2NmR2AttHEgVXr3qC6GAogwp/jGq1X2I6yQjQrw4MUbYKmhVxoLu2ZhAatolOHZSaJ4vvkrtmmbD8aAA7KKhOUBsbwGXsBmSxHmqz4INgf8WUY4V2Id7lO2QkXSEZw62grRqzFdZGE5f4r2hUsFJHrvHCNx5+8FHtfuZiJ0OFfmXAKlEx4Qv3UHhvKVVj9a7iMysJsghi/QhZr0JVoH3mithDI0Za7EEdiOt+/1+i+rE0LL1RHORCQ75uxNEWSMfgrQb7g6Y7o0PcdLdM9CJRoyO3yOfpENc3b/S0bcVHiX/Rt28UlYJS1+5bmH3nOSczWu8PJeLmjOSghtQj0Ym7tJ0/CxJgWYES/3+mq6TJlsq2QLyaonqnfO3Dt6ORzMB/L8uDAi1DmgZ7roMt2yab+KVuvTFuC1qZ8Q6jiX6YstlpgmXpj5uVBPXLR+bOBe5iJXDypbNzxVxoXlPon2y5u0tgu83q6GaFXbvAc0umsLyr4wQKSoHEMDPUncIwMBSDKWeblix2kyfrDS5K5bEJfigYRK3Oy2MShd5xE1UNp1bcmtk7YGDFgCSTFh8p8TFQ549XCWe0Oky7338f7w2tduPksC+XJqLBo4cIlGQBVu9LrlijuI+33Ka3toI3NzrEmdQzUKWCWv8FqS3qdda1+RydQvpOFAjLsI3qKtw=='
+  vijaykumbhar@vijays-MacBook-Pro.local:
+    ensure: present
+    user: 'vijay'
+    type: 'ssh-dss'
+    key: 'AAAAB3NzaC1kc3MAAACBAM4nQ7mwiNMHUlG6pPncWsi3MEsg3s5jVacIfjqyeq9FTYNTcJ6K/sslBS8HYV2Ckwx2bXxcD8Hy8KEVWst9bH4VE869X2k1AGr8EMJR2UsEzw2XbD+FW4OuASby3Rt6JJ0bRTdQxks7W4Vm6EnznJ8Mt75sSvbUK764JXWTosRLAAAAFQCMzHeutmzLrr4/Ywz8CCAeXQmRCQAAAIEAp3cwOIVOJKtR+Z7J3K1J+0Ljwnu4RnqMiapJXhpw041EBmSJznUEECM/28B0QIp7nwMkheCT6x9net92IquAgXBowHT0ee0C9etyLvREnTCFGpizORLWJlPX5+xPFsexXdVVvi1C/Yn7ZuyMEx+/e2EgAslmO+GYq7sd4OtPNtUAAACAf8WdRSvgtx/Gz68T9UTi8FKSiHvD8Q8Tyi8Zfq4S/8BOchJ6bvbKfA0CJXGuxFYEZ5VsbCzP7Pu7gVoxqq/W1Vf4omqKAmX2e4zJLZPlVFaZBvy/yDivFrXtlcrbqIOYvEMM/p7m80bpy09LgBsCU5w9ejK2ebdQpXZgkBHzxY4='
+  kvijay@weboniselab.com:
+    ensure: present
+    user: 'vijay'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDWjHw3CdC8MAlJtdL3eSmRp3jS73cdFKZndCPBXzEspuVeDG2DiPCAxFeEJTlZPqaYKQb9ukMqcE45DfZspoVHgrSik9ZuBeOwsv/K45ErOhMtVNsnZqAShVz8GRxXEm1EF+Tk8yJBTOPrCa3YIRovb/848xNJa/T8KLCQ8624X/WedmmsFkE4ECMeX9SbPYYdzWJjUCGYhHjYNB3qbznMt3OVQ32zcvAaWR1pwlY3Q11XzOCU5rGqPC9CZRbwantbqjH+roem2kztZt6oF6Uab3A8WdI2EL6ZYgAvTHLcQFWhy3aacLYVeGzcST2ngukhVGtRAf/HAIRZQf3JrexF'
+  vijay.kumbhar:
+    ensure: present
+    user: 'vijay'
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQD5vBGI/3BB+LeX8XOT58ZxSbAte48fRGdKxhKL0bSmHpsXfxj7Xy5XNA3PmVIIbtZ2QP3/xBr3Fpjggz6MmeGFR+izSoVvppstIkv1OmcrLS6WJ1rTsOkvH21xaIU1oQyzJShsRk/R999D54QZ+bgblv07Sp/5HkTNTmNTvdkBdWa9IBiTLySjeQNbLOggpnNlLDPb8gAnFO58ZrUuW8xQbhntZpUTrCI0NDeE6y2ZYcO7bVZ1IMXh19O4bj/0SzeP2tRqYkcJN9coLaGgEvWXEWvqC6t/dkTdPysT6nkAsrZuWQs1CdpoSSPGcIkaaNPbVprzjHePjD498GeXE/Fl'
+  ashutosh.jha@weboniselab.com:
+    ensure: present
+    user: ashutosh
+    type: 'ssh-rsa'
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQCng9BXRFXaPC6aDQN3Kp882SqwuzwqyJdkrTehXwNRLfqafA0Rhb2b0Iwr46C2/0vbEyNIb1zjaEEkkTybFpEjuCJm+Djgqj41+GL6e524R4BnGTzHnz0ih24kFmyRFsJWvEmjlaiaDI+0jpNa1Lg8i0XYWAjrQbuY3ZBTtBLRQAnvm49s9zDtjhgiBzZhMBLalviepvdoUAyG0dpaTHTTeow0vfkTHn93sQdsbeg5XDhDqIIjqlx1peiHiNlephNcTmtoOK6CCwmQFqfb9gI3cXZejcwhcIa7T3pBty8+rXNnfl3zc56b3Ds/egt94Fukq83oMx8j5JyH7ySlW7fh79VPq8RxKiqqOb41MjXdMGlT1nwEKQaLsbUUcGYPthbJy14QeZCC4gpkrIk4DO3LI3UTYK5ZAbb5ZPikHCvZfOmm3vzLwl6BQXYYO1ZIAcCVbRNPvq2P7Ak3pFCg5D74dzClDqt/oYhm0UqerKRwKi78BTyvWgUzboO93uOOICf1LgR7fbnw9J50BaVAgOlRiVDSK5MOTaR+jh67hRuFrsN6zzLTMGCBvmWRpJPNvFdKvGbza2OysxF4hyzlRFvWyL/8hEC2LQA9+6JZkvJt8cTiIbuVQ4abJS6/TwTaNZy/59a5rtXIZvCirFVnNaPe+V5oHmTWJubom6xxayrczw=='
+  jenkins@jenkins-ci.weboapps.com:
+    ensure: present
+    type: 'ssh-rsa'
+    user: deploy
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDEBYSSvItCkE3bApkVGF4lf7xlzjWEXIiw9dAe1SkzifuxzkWmg0WKEe6bUDfYM+TcI6D3HPIU1Vna6tHVm5ke9CRe1fKO1MT62SfvoU6nBQTNvaNK8g1stmsH1YxHejhsfW/rMhPkRiZ1IedWJpUSYwDEV95ixzYOfH6T5b6Rc+pE1p/vfAJ48YDvxZw2jTIDEILoG/MGWRRPMnemLrBewjcn8wBOoCZcabJi4OjbEmlhyoGMkN8tgCoHKi13R1SmeiA5NTskTdQw7OGfPlv91PmFuwWnjLFPgNn6SX7jEMxhQhgyQY6iWVhjgk0WMcq8q0Ml81vk0qPpT0AtEVW9'
+  deploy@deploy.weboniselab.com:
+    ensure: present
+    type: 'ssh-rsa'
+    user: deploy
+    key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC8X4ejiu+lqRB8yWcuklWy2qkYXZdkVKN1AVVsg5wLhrVNQuqZrY9bz7iDJfT7lZ8eVZwO99jM1K+t8lmUx0rC5yl0Wgi+RDm74DhGIs02RLRYvKEWZyY0wbgI/FnkWHw3+1EM5UYrvLUX/98VcI2xypiCPX3QMGs7S6CwrrVGIDH8PT+4yhx6Ci4B67BgwKGFxzsvPvXfFuIKk+ZNlntZpS0T0ismAg1jP0o6podPeOQv7CRoqB3XwAopWznHTQTd/zOEFR+xpNOgBCVYrptM4B/nVQsd5OLiUR/agdRNYLAQvVIWGWrvopDq+iRi9OfRIsZTtXl6OzlgYCjodREl'
+
+nagios_checks_passive:
+  - "check_load"
+  - "check_disk"
+  - "check_memory"
+  
+
+nagios_checks_active:
+
+
+## Generate this htdigest using the command
+## htdigest -c <some_file> "Nagios Access" nagiosadmin
+## Add the generated hash here
+http_digest:
+  - "nagiosadmin:Nagios Access:bc71e47d30d5f997151be33631949d14"
+  - "devops:Nagios Access:c7b4448c19bd6a798a508065f5ce9a02"
+
+nagios_contacts:
+  nikhilc:
+    ensure: present
+    alias: 'Devops Team'
+    use: 'generic-contact'
+    target: "/etc/nagios/objects/contacts/nikhilc.cfg"
+    mode: '0644'
+    email: 'nikhil.chaudhari@weboniselab.com'
+    pager: '+919004460225'
+  pravinr:
+    ensure: present
+    alias: 'Devops Team'
+    use: 'generic-contact'
+    target: "/etc/nagios/objects/contacts/pravinr.cfg"
+    mode: '0644'
+    email: 'pravin.rajput@weboniselab.com'
+    pager: '+918446286038'
+  amitjha:
+    ensure: present
+    alias: 'Developers'
+    use: 'generic-contact'
+    target: "/etc/nagios/objects/contacts/amitjha.cfg"
+    mode: '0644'
+    email: 'amit@weboniselab.com'
+    pager: '+918446286038'
+  ankitat:
+    ensure: present
+    alias: 'Developers'
+    use: 'generic-contact'
+    target: "/etc/nagios/objects/contacts/ankitat.cfg"
+    mode: '0644'
+    email: 'ankita.tandel@weboniselab.com'
+    pager: '+918446286038'

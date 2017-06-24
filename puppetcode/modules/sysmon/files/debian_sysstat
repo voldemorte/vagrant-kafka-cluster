@@ -1,0 +1,12 @@
+# This file is managed via Puppet. Any manual changes to this file would not survive the next puppet 
+# run and would be overwritten by the puppet version.
+# Please contact DevOps team if you wish to make changes in this file.
+#
+# Default settings for /etc/init.d/sysstat, /etc/cron.d/sysstat
+# and /etc/cron.daily/sysstat files
+#
+
+# Should sadc collect system activity informations? Valid values
+# are "true" and "false". Please do not put other values, they
+# will be overwritten by debconf!
+ENABLED="true"
